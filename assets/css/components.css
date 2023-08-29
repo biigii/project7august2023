@@ -33,3 +33,39 @@ nav.navigation a:hover {
   background-color: var(--brand);
   color: var(--brand-text)
 }
+
+/* pseudo element */
+/* ::after and ::before */
+
+/*  add a pseudo element after the content of h1 */
+.about h1::after {
+  content: ' us'
+}
+
+.about h1::before {
+  content: 'hi, '
+}
+
+.contact h1::after {
+  /* default is display: inline; */
+  /* display: inline-block;
+  content: '';
+  width: 50px;
+  height: 50px; */
+  /* to make it round */
+  /* border-radius: 50%;
+  background-color: var(--brand); */
+
+  content: '\260F';
+  color: red;
+}
+
+p::before {
+  /* content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #db1616;
+  display: inline-block;
+  margin-right: 10px; */
+  content: '\270C';
+}
